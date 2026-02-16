@@ -8,21 +8,21 @@ on:
         required: true
         type: choice
         options:
-          - major
-          - minor
           - patch
-          - premajor
-          - preminor
-          - prepatch
-          - prerelease
-      preid:
-        description: Pre-release identifier (required for pre* bumps)
-        required: false
-        type: choice
-        options:
-          - alpha
-          - beta
-          - rc
+          - minor
+          - major
+          # - premajor
+          # - preminor
+          # - prepatch
+          # - prerelease
+      # preid:
+      #   description: Pre-release identifier (required for pre* bumps)
+      #   required: false
+      #   type: choice
+      #   options:
+      #     - alpha
+      #     - beta
+      #     - rc
 
 jobs:
   release:
